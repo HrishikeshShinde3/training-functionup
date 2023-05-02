@@ -36,17 +36,17 @@ function App() {
 
   }
 
-  async function getDog () {
+  // async function getDog () {
 
-    try{
-        // async await (to wait till request is processed
-        const response = await fetch('https://dog.ceo/api/breeds/image/random')
-        const data = await response.json()
-        setImage(data.message)
-    }
-    catch(error){
-      console.log('i am from catch' ,error)
-    }
+  //   try{
+  //       // async await (to wait till request is processed
+  //       const response = await fetch('https://dog.ceo/api/breeds/image/random')
+  //       const data = await response.json()
+  //       setImage(data.message)
+  //   }
+  //   catch(error){
+  //     console.log('i am from catch' ,error)
+  //   }
 
 
   }
