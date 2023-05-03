@@ -1,0 +1,27 @@
+body{
+    background-color: black;
+}
+.card{
+
+    background-color:    hotpink;
+    ;
+    width: 250px;
+    background-color: hotpink;
+    border: 10px solid rgb(63, 155, 47) ;
+    text-align:center;
+    border-radius: 950px;
+    padding: 8px;
+}
+img{
+     margin: 25px;
+     width: 150px;
+     height: 125px;
+     border-radius: 7px;
+}
+button{
+
+    height: 50px;
+    width: 100px;
+    background-color: hotpink;
+    border-radius: 7px;
+}

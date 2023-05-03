@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 function App1() {
-  const [dogImage, setDogImage] = useState("0");
+  const [dogImage, setDogImage] = useState("");
 
   useEffect(() => {
     fetch("https://dog.ceo/api/breeds/image/random")
