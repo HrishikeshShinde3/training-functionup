@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 import './App.css';
 
 
@@ -6,6 +6,9 @@ function App() {
 
   const [image , setImage] = useState('https://images.pexels.com/photos/3177388/pexels-photo-3177388.jpeg?auto=compress&cs=tinysrgb&w=800')
 
+  useEffect(() => {
+    //Runs on every render
+  });
 
   //  https://jsonplaceholder.typicode.com/posts
 
@@ -36,31 +39,20 @@ function App() {
 
   }
 
-  // async function getDog () {
+  async function getDog () {
 
-  //   try{
-  //       // async await (to wait till request is processed
-  //       const response = await fetch('https://dog.ceo/api/breeds/image/random')
-  //       const data = await response.json()
-  //       setImage(data.message)
-  //   }
-  //   catch(error){
-  //     console.log('i am from catch' ,error)
-  //   }
+    try{
+        // async await (to wait till request is processed
+        const response = await fetch('https://dog.ceo/api/breeds/image/random')
+        const data = await response.json()
+        setImage(data.message)
+    }
+    catch(error){
+      console.log('i am from catch' ,error)
+    }
 
 
   }
-
-
-
-
-  
-
-
-
-
-
-
 
 
 
